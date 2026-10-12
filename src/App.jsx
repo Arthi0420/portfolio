@@ -228,13 +228,20 @@ export default function App() {
           <div className="projects-grid">
             {projects.map((p) => (
               <article key={p.name} className={`card project ${p.featured ? "featured" : ""}`}>
-                {p.featured && <span className="badge">Featured · MERN</span>}
+                {p.badge && <span className="badge">{p.badge}</span>}
                 <h3>{p.name}</h3>
                 <p>{p.description}</p>
                 <Tags items={p.stack} />
-                <a className="link" href={p.code} target="_blank" rel="noreferrer">
-                  View code →
-                </a>
+                <div className="links">
+                  {p.live && (
+                    <a className="link" href={p.live} target="_blank" rel="noreferrer">
+                      Live demo ↗
+                    </a>
+                  )}
+                  <a className="link" href={p.code} target="_blank" rel="noreferrer">
+                    View code →
+                  </a>
+                </div>
               </article>
             ))}
           </div>

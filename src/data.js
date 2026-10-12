@@ -66,24 +66,35 @@ export const experience = {
 
 export const projects = [
   {
+    name: "Task Manager",
+    badge: "My first full-stack project",
+    description:
+      "Where my coding journey started. A MERN task manager with Firebase email/password sign-up and login, per-user tasks stored in MongoDB, To Do / In Progress / Completed status, pinning, and search and filter. React (Vite) frontend on Vercel and an Express REST API on Render.",
+    stack: ["React", "Vite", "Node.js", "Express", "MongoDB", "Mongoose", "Firebase Auth", "Axios", "Tailwind"],
+    live: "https://task-manager-client-murex.vercel.app",
+    code: "https://github.com/Arthi0420/Task-Manager",
+    featured: true,
+  },
+  {
     name: "Taskify",
     description:
-      "Full-stack task manager. Users sign in with Firebase Authentication, then create and list tasks that update without a page refresh. React (Vite) frontend on Vercel, Express API on Render.",
-    stack: ["React", "Vite", "Node.js", "Express", "MongoDB", "Firebase Auth", "Tailwind"],
+      "Second version of my task manager. Firebase sign-in, tasks that update without a page refresh, Express + MongoDB API on Render.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "Firebase Auth"],
+    live: "https://taskify-client-ten.vercel.app",
     code: "https://github.com/Arthi0420/Taskify",
-    featured: true,
   },
   {
     name: "Actodo List",
     description: "Responsive to-do app with full CRUD, built with React Hooks and local-storage persistence.",
     stack: ["React", "Hooks", "Tailwind CSS"],
-    code: "https://github.com/Arthi0420",
+    live: "https://actodo-kappa-self.vercel.app",
+    code: "https://github.com/Arthi0420/Actodo",
   },
   {
     name: "Nostra E-commerce",
     description: "Responsive e-commerce storefront with product listings, search and filtering in vanilla JavaScript.",
     stack: ["HTML", "CSS", "JavaScript"],
-    code: "https://github.com/Arthi0420",
+    code: "https://github.com/Arthi0420/Nostra-Ecommerce-Website",
   },
 ];
 
